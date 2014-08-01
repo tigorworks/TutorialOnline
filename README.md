@@ -1,4 +1,4 @@
 TutorialOnline
 ==============
 
-Kumpulan project-project tutorial online
+Repository ini berisi kumpulan-kumpulan proyek / tutorial yang dibuat diberbagai macam web tutorial / forum / blog.
