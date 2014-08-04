@@ -1,0 +1,205 @@
+object FormMain: TFormMain
+  Left = 451
+  Height = 546
+  Top = 28
+  Width = 414
+  Caption = 'Baca Data KPU (http://pilpres2014.kpu.go.id/da1.php)'
+  ClientHeight = 546
+  ClientWidth = 414
+  OnClose = FormClose
+  OnCreate = FormCreate
+  OnShow = FormShow
+  LCLVersion = '1.2.4.0'
+  object btnDownload: TButton
+    Left = 8
+    Height = 25
+    Top = 8
+    Width = 128
+    Caption = 'Download Data'
+    OnClick = btnDownloadClick
+    TabOrder = 0
+  end
+  object PageControl1: TPageControl
+    Left = 8
+    Height = 464
+    Top = 48
+    Width = 402
+    ActivePage = TabSheet2
+    Anchors = [akTop, akLeft, akRight, akBottom]
+    TabIndex = 1
+    TabOrder = 1
+    object TabSheet1: TTabSheet
+      Caption = 'ThreadList'
+      ClientHeight = 436
+      ClientWidth = 394
+      object lvThread: TListView
+        Left = 8
+        Height = 422
+        Top = 8
+        Width = 378
+        Anchors = [akTop, akLeft, akRight, akBottom]
+        Columns = <        
+          item
+            Caption = 'Name'
+            Width = 250
+          end        
+          item
+            Caption = 'Status'
+            Width = 100
+          end>
+        ReadOnly = True
+        TabOrder = 0
+        ViewStyle = vsReport
+      end
+    end
+    object TabSheet2: TTabSheet
+      Caption = 'Real Count'
+      ClientHeight = 436
+      ClientWidth = 394
+      object ChartPie: TChart
+        Left = 0
+        Height = 362
+        Top = 74
+        Width = 394
+        AxisList = <        
+          item
+            Visible = False
+            Minors = <>
+            Title.LabelFont.Orientation = 900
+          end        
+          item
+            Visible = False
+            Alignment = calBottom
+            Minors = <>
+          end>
+        Foot.Brush.Color = clBtnFace
+        Foot.Font.Color = clBlue
+        Title.Brush.Color = clBtnFace
+        Title.Font.Color = clBlue
+        Title.Text.Strings = (
+          'TAChart'
+        )
+        Align = alClient
+        ParentColor = False
+        object ChartPiePieSeries1: TPieSeries
+          Marks.Distance = 40
+          Marks.Format = '%2:s'
+          Marks.Style = smsLabel
+          Title = 'http://tigorworks.com'
+          Exploded = True
+          Source = chartSource
+        end
+      end
+      object Panel1: TPanel
+        Left = 0
+        Height = 74
+        Top = 0
+        Width = 394
+        Align = alTop
+        ClientHeight = 74
+        ClientWidth = 394
+        TabOrder = 1
+        object Label1: TLabel
+          Left = 8
+          Height = 15
+          Top = 8
+          Width = 90
+          Caption = 'Prabowo-Hatta : '
+          ParentColor = False
+        end
+        object Label2: TLabel
+          Left = 32
+          Height = 15
+          Top = 32
+          Width = 64
+          Alignment = taRightJustify
+          Caption = 'Jokowi - JK :'
+          ParentColor = False
+        end
+        object Label3: TLabel
+          Left = 32
+          Height = 15
+          Top = 56
+          Width = 65
+          Alignment = taRightJustify
+          Caption = 'Total Suara :'
+          ParentColor = False
+        end
+        object lbpr: TLabel
+          Left = 104
+          Height = 15
+          Top = 8
+          Width = 22
+          Caption = 'N/A'
+          ParentColor = False
+        end
+        object lbjk: TLabel
+          Left = 104
+          Height = 15
+          Top = 32
+          Width = 22
+          Caption = 'N/A'
+          ParentColor = False
+        end
+        object lbTotal: TLabel
+          Left = 104
+          Height = 15
+          Top = 56
+          Width = 22
+          Caption = 'N/A'
+          Font.Style = [fsBold]
+          ParentColor = False
+          ParentFont = False
+        end
+        object Label4: TLabel
+          Left = 256
+          Height = 15
+          Top = 8
+          Width = 65
+          Caption = 'SQL Queue :'
+          ParentColor = False
+        end
+        object lbQueue: TLabel
+          Left = 328
+          Height = 15
+          Top = 8
+          Width = 6
+          Caption = '0'
+          ParentColor = False
+        end
+      end
+    end
+    object TabSheet3: TTabSheet
+      Caption = 'SQL Error'
+      ClientHeight = 436
+      ClientWidth = 394
+      object mError: TMemo
+        Left = 0
+        Height = 436
+        Top = 0
+        Width = 394
+        Align = alClient
+        ScrollBars = ssAutoVertical
+        TabOrder = 0
+      end
+    end
+  end
+  object sbMain: TStatusBar
+    Left = 0
+    Height = 23
+    Top = 523
+    Width = 414
+    Panels = <>
+  end
+  object tmMon: TTimer
+    Enabled = False
+    Interval = 2000
+    OnTimer = tmMonTimer
+    left = 312
+    top = 88
+  end
+  object chartSource: TListChartSource
+    left = 352
+    top = 96
+  end
+end

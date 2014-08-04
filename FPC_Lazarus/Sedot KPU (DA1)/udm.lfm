@@ -1,0 +1,49 @@
+object dm: Tdm
+  OnCreate = DataModuleCreate
+  OldCreateOrder = False
+  Height = 164
+  HorizontalOffset = 508
+  VerticalOffset = 182
+  Width = 426
+  object zConn: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    HostName = 'localhost'
+    Port = 3319
+    Database = 'da1'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'libmySQL50.dll'
+    left = 24
+    top = 16
+  end
+  object qView: TZQuery
+    Connection = zConnMon
+    Params = <>
+    left = 67
+    top = 21
+  end
+  object dsAct: TDataSource
+    DataSet = qView
+    left = 63
+    top = 69
+  end
+  object zConnMon: TZConnection
+    ControlsCodePage = cCP_UTF8
+    AutoEncodeStrings = False
+    Properties.Strings = (
+      'AutoEncodeStrings='
+    )
+    HostName = 'localhost'
+    Port = 3319
+    Database = 'da1'
+    User = 'root'
+    Protocol = 'mysql-5'
+    LibraryLocation = 'libmySQL50.dll'
+    left = 136
+    top = 21
+  end
+end
