@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    >
+<TextView  
+    android:layout_width="fill_parent" 
+    android:layout_height="wrap_content" 
+    android:text="@string/hello"
+    />
+<EditText android:text="" android:id="@+id/edHello" android:layout_width = "fill_parent"
+android:layout_height="wrap_content" android:inputType="text"></EditText>
+
+<Button android:text="Tampilkan" android:id="@+id/btnTampil" android:layout_width = "fill_parent"
+android:layout_height="wrap_content" android:onClick = "TampilTulisan"></Button>
+</LinearLayout>

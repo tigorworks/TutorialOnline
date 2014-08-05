@@ -1,0 +1,15 @@
+INPUT ISO TO FIELD
+=======================
+080082200001004000000400000000000000113009134909134903037200800103700000001
+
+INPUT FIELD TO ISO
+=======================
+<isomsg>
+    <mti id="0800" />
+    <field id="1" value="64" />
+    <field id="7" value="1130091349" />
+    <field id="11" value="091349" />
+    <field id="32" value="03037" />
+    <field id="42" value="200800103700000" />
+    <field id="70" value="001" />
+</isomsg>

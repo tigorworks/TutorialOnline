@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/05/13 21:10:14.000.547,=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/06/12 01:45:30.000.734,=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/07/01 09:32:55.953,=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/07/01 09:35:30.336,=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2013/07/01 09:35:45.237,C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\ThreadImage\uthImageMove.pas=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Unit2.pas</Transaction>
+    <Transaction>2013/07/01 09:35:50.027,C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\ThreadImage\uMain.pas=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Unit1.pas</Transaction>
+    <Transaction>2013/07/01 09:35:50.027,C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\ThreadImage\uMain.dfm=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Unit1.dfm</Transaction>
+    <Transaction>2013/07/01 09:35:56.894,C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\ThreadImage\ImageThread.dproj=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Project2.dproj</Transaction>
+  </Transactions>
+</BorlandProject>

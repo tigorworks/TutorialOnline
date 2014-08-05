@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  android:orientation="vertical"
+  android:layout_width="fill_parent"
+  android:layout_height="fill_parent">
+  <TextView
+  	android:id="@+id/label1"
+  	android:text="Berat Badan :"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content"
+  >
+  </TextView>
+  <EditText
+  	android:id="@+id/edBerat" 
+  	android:text=""
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:inputType="numberSigned|numberDecimal">
+  </EditText>
+  <TextView
+  	android:id="@+id/label2"
+  	android:text="Tinggi Badan :"
+  	android:layout_width="wrap_content"
+  	android:layout_height="wrap_content">
+  </TextView>
+  <EditText
+  	android:id="@+id/edTinggi" 
+  	android:text=""
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:inputType="numberSigned|numberDecimal">
+  </EditText>
+  <Button
+  	android:id="@+id/btnKalkulasi"
+  	android:text="Kalkulasi"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:onClick="doKalkulasi">
+  </Button>
+  <Button
+  	android:id="@+id/btnKembali"
+  	android:text="Menu Utama"
+  	android:layout_width="fill_parent"
+  	android:layout_height="wrap_content"
+  	android:onClick="BackMainMenu">
+  </Button>
+</LinearLayout>

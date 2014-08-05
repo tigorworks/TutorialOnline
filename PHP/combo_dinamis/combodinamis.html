@@ -1,0 +1,60 @@
+<html>
+<head>
+<title>Combobox Dinamis</title>
+<script language="javascript" src="js/jquery-1.7.2.min.js"></script>
+<script language="javascript">
+function Load(data,primid){
+	$('#loading'+data).empty().append('<img src="img/ajax-loader.gif"/>');
+	$.post("data.php",{tipe:data,id:primid},
+	function(result){
+		$('#cb'+data).empty();
+		if(result.error==undefined){ //cek ada error atau ngga,klo ga ada lanjut			
+			$('#cb'+data).append('<option>---Pilih Data---</option>');
+			for(var i=0;i<=result.length;i++){
+				$('#cb'+data).append($('<option></option>').val(result[i].id).text(result[i].nama));
+			}
+		}else{
+			$('#loading'+data).empty().append('Data tidak ditemukan');
+			//alert(result.error);
+		}
+	},'json'
+	);	
+	$('#loading'+data).empty();
+}
+
+$(function(){
+	Load('kendaraan',0);
+	
+	$('#cbkendaraan').change(
+		function(){			
+			if($('#cbkendaraan option:selected').val() !=''){
+				Load('model',$('#cbkendaraan option:selected').val());
+			}
+		}
+	);
+	
+	$('#cbmodel').change(
+		function(){			
+			if($('#cbmodel option:selected').val() !=''){
+				Load('merk',$('#cbmodel option:selected').val());
+			}
+		}
+	);
+});
+</script>
+</head>
+<body>
+<table>
+<tr>
+	<td>Kendaraan </td><td><select id="cbkendaraan"></select></td><td><div id="loadingkendaraan"></div></td>   
+</tr>
+<tr>
+	<td>Model</td><td><select id="cbmodel"></select></td><td><div id="loadingmodel"></div></td>
+</tr>
+<tr>
+	<td>Merk</td><td><select id="cbmerk"></select></td>    <td><div id="loadingmerk"></div></td>
+</tr>
+</table>
+
+</body>
+</html>

@@ -1,0 +1,9 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/10/05 13:57:00.000.075,C:\vcl_libs\JSONQuery\JSONGroup.groupproj=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\ProjectGroup1.groupproj</Transaction>
+  </Transactions>
+	<Default.Personality>
+		<Projects ActiveProject="C:\vcl_libs\JSONQuery\demo\example.dproj"/>
+	</Default.Personality>
+</BorlandProject>

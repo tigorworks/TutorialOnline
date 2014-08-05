@@ -1,0 +1,72 @@
+unit uthImageMove;
+
+interface
+
+uses
+  Classes,ExtCtrls,forms;
+
+type
+  TFlowMove = (fmToRight,fmToLeft);
+  TTHImageMove = class(TThread)
+  private
+    FFlowMove: TFlowMove;
+    FImage: TImage;
+    FMaxLeft: integer;
+    FMaxRight: Integer;
+    procedure startMove;
+    { Private declarations }
+  protected
+    procedure Execute; override;
+  public
+    constructor Create;
+    property Image: TImage read FImage write FImage;
+    property FlowMove: TFlowMove read FFlowMove write FFlowMove;
+    property MaxLeft: integer read FMaxLeft write FMaxLeft;
+    property MaxRight: Integer read FMaxRight write FMaxRight;
+    procedure Stop;
+  end;
+
+implementation
+
+
+{ TTHImageMove }
+
+constructor TTHImageMove.Create;
+begin
+  inherited Create(True);
+  FreeOnTerminate := True;
+  FFlowMove := fmToRight;
+  FMaxLeft := -1;
+  FMaxRight := -1;
+end;
+
+procedure TTHImageMove.Execute;
+begin
+  while (True) do
+  begin
+    Synchronize(startMove);
+    sleep(100);
+    Application.ProcessMessages;
+    if Terminated then
+      Break;
+  end;
+end;
+
+procedure TTHImageMove.startMove;
+begin
+  if FMaxLeft > -1 then
+  begin
+  
+  end;
+  case FFlowMove of
+    fmToRight: Image.Left := Image.Left + 1;
+    fmToLeft: Image.Left := Image.Left - 1;
+  end;
+end;
+
+procedure TTHImageMove.Stop;
+begin
+  Terminate;
+end;
+
+end.

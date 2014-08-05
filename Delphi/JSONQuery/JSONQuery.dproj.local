@@ -1,0 +1,15 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<BorlandProject>
+	<Transactions>
+    <Transaction>2013/10/05 13:28:00.000.949,=rtl.dcp</Transaction>
+    <Transaction>2013/10/05 13:28:21.000.059,=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\JSONQuery\twjsonquery.pas</Transaction>
+    <Transaction>2013/10/05 13:28:35.000.597,C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\Package1.dproj=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\JSONQuery.dproj</Transaction>
+    <Transaction>2013/10/05 13:28:52.000.419,C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\JSONQuery.dproj=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\JSONQuery\JSONQuery.dproj</Transaction>
+    <Transaction>2013/10/05 13:29:01.000.678,=C:\Users\Tigor Manurung\Documents\RAD Studio\Projects\JSONQuery\Unit1.pas</Transaction>
+    <Transaction>2013/10/05 13:31:07.000.454,=C:\vcl_libs\JSONQuery\jsonquery.pas</Transaction>
+    <Transaction>2013/10/05 13:31:38.000.520,=dbrtl.dcp</Transaction>
+    <Transaction>2013/10/05 13:52:07.000.610,=C:\vcl_libs\JSONQuery\Unit1.pas</Transaction>
+    <Transaction>2013/10/05 13:52:26.000.807,=dsnap.dcp</Transaction>
+    <Transaction>2013/10/05 13:52:26.000.796,=vcl.dcp</Transaction>
+  </Transactions>
+</BorlandProject>
